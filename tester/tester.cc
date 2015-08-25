@@ -3,13 +3,10 @@
 
 int main(int argc, char **argv)
 {
-    std::string str("10.2345asdf");
-    std::stringstream ss(str);
-    double ret = double();
+    std::stringstream ss("10.2345asdf");
+    double ret;
     ss >> ret;
 
-    std::cout << "String: " << str << std::endl;
     std::cout << "Double: " << ret << std::endl;
-
     return 0;
 }
